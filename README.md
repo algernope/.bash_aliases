@@ -65,3 +65,11 @@ smbuseraccess - equivalent of smbclient \\\\<ip>\\<share> -U "user"
 nicto - equivalent of nikto <ip>
     Usage - nicto ip
   this one is less about saving typing and more about not forgetting the -h flag :)
+
+ovpnhtb - equivalent of sudo openvpn ovpn/hackthebox.ovpn
+    Usage - ovpnhtb
+In the home directory, I created a directory "ovpn" and placed the OpenVPN config files in there
+
+ovpnthm - equivalent of sudo openvpn ovpn/tryhackme.ovpn
+    Usage - ovpnthm
+    
