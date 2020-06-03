@@ -1,16 +1,5 @@
 
 
-# Table of Contents
-- [NMAP](#nmap)
-- [HTTP Server Enumeration](#http-server-enumeration)
-- [Directory Busting](#directory-busting)
-- [SMB Enumeration](#smb-enumeration)
-- [pyHTTP](#pyhttp)
-- [UFW](#ufw)
-- [Hosts File Management](#hosts-file-management)
-- [Misc](#misc)
-
-
 Useful aliases for bash
 
 Kali is an extremely useful distribution with a lot of powerful tools. But, that doesn't mean there's not a lot of typing involved though!
@@ -24,6 +13,15 @@ Run source .bash_aliases
 Now the bash aliases are ready to use!
 
 The comments in the file explain what the aliases do, but I am listing a reference below as well:
+# Table of Contents
+- [NMAP](#nmap)
+- [HTTP Server Enumeration](#http-server-enumeration)
+- [Directory Busting](#directory-busting)
+- [SMB Enumeration](#smb-enumeration)
+- [pyHTTP](#pyhttp)
+- [UFW](#ufw)
+- [Hosts File Management](#hosts-file-management)
+- [Misc](#misc)
 
 ## NMAP
 
