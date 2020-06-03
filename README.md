@@ -1,4 +1,5 @@
 
+
 # Table of Contents
 - [NMAP](#nmap)
 - [HTTP Server Enumeration](#http-server-enumeration)
@@ -44,6 +45,7 @@ nicto - equivalent of `nikto <ip>`
 # Directory Busting
 
 busthttpdir - equivalent of `gobuster -t 40 dir -u http://"$1" -w /usr/share/wordlists/dirb/common.txt`
+
 • Usage - busthttpdir 192.168.1.100
 
 # SMB Enumeration
