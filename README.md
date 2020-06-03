@@ -39,8 +39,9 @@ postscan - equivalent of `sudo nmap -v -T4 -A -p`
 
 nicto - equivalent of `nikto <ip>`
 
-• Usage - nicto ip
-  this one is less about saving typing and more about not forgetting the -h flag :)
+• Usage - nicto http://192.168.1.100
+
+this one is less about saving typing and more about not forgetting the -h flag :)
 
 # Directory Busting
 
