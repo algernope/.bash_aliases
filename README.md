@@ -27,66 +27,79 @@ The comments in the file explain what the aliases do, but I am listing a referen
 ## NMAP
 
 prescan - equivalent of `sudo nmap -v -T4 -p-`
-    • Usage - prescan 192.168.1.100
+
+• Usage - prescan 192.168.1.100
 
 postscan - equivalent of `sudo nmap -v -T4 -A -p`
-    • Usage - postscan 22,80 192.168.1.100
+
+• Usage - postscan 22,80 192.168.1.100
     
 # HTTP Server Enumeration
 
 nicto - equivalent of `nikto <ip>`
-    • Usage - nicto ip
+
+• Usage - nicto ip
   this one is less about saving typing and more about not forgetting the -h flag :)
 
 # Directory Busting
 
 busthttpdir - equivalent of `gobuster -t 40 dir -u http://"$1" -w /usr/share/wordlists/dirb/common.txt`
-    • Usage - busthttpdir 192.168.1.100
+• Usage - busthttpdir 192.168.1.100
 
 # SMB Enumeration
 
 smbanonlist - equivalent of `smbclient -N -L \\\\<ip\\`
-    • Usage - smbanonlist 192.168.1.100
+
+• Usage - smbanonlist 192.168.1.100
     
 smbuserlist - equivalent of `smbclient -L \\\\<ip>\\ -U "<user>"`
-    • Usage - smbuserlist 192.168.1.100 user
+
+• Usage - smbuserlist 192.168.1.100 user
   
 smbanonaccess - equivalent of `smbclient -N \\\\<ip>\\<share>`
-    • Usage - smbanonaccess 192.168.1.100 share
+
+• Usage - smbanonaccess 192.168.1.100 share
   
 smbuseraccess - equivalent of `smbclient \\\\<ip>\\<share> -U "user"`
-    • Usage - smbuseraccess 192.168.1.100 share user
+
+• Usage - smbuseraccess 192.168.1.100 share user
 
 # pyHTTP
 
 pyhttpserver - equivalent of `python3 -m http.server <port>`
-    • Usage - pyhttpserver 8080
+
+• Usage - pyhttpserver 8080
 
 # OpenVPN
 
 ovpnhtb - equivalent of `sudo openvpn ovpn/hackthebox.ovpn`
-    • Usage - ovpnhtb
+
+• Usage - ovpnhtb
 In the home directory, I created a directory "ovpn" and placed the OpenVPN config files in there
 
 ovpnthm - equivalent of `sudo openvpn ovpn/tryhackme.ovpn`
-    • Usage - ovpnthm
+
+• Usage - ovpnthm
 
 # UFW
 
 allowufwIN - equivalent of `sudo ufw allow from <ip> proto <protocol> to any port <port>`
     The command allows traffic IN to the host on a specific port and protocol (if defined)
-    • Usage - allowufwIN 192.168.1.100 22
-    or also - allowufwIN 192.168.1.100 53/udp
+
+• Usage - allowufwIN 192.168.1.100 22
+or also - allowufwIN 192.168.1.100 53/udp
 
 listufw - equivalent of `sudo ufw status numbered`
 
 deleteufw - equivalent of `sudo ufw delete <number of rule to delete>`
-    • Usage - deleteufw 1
+
+• Usage - deleteufw 1
   
 # Hosts File Management
 
 addhosts - equivalent of `sudo -- sh -c "echo '<ip>      <hostname>' >> /etc/hosts"`
-    • Usage - addhosts 192.168.1.100 host.name
+
+• Usage - addhosts 192.168.1.100 host.name
   
 losehostsbyname - equivalent of `sudo sed -i /<ip or hostname>/d /etc/hosts`
 
@@ -98,4 +111,5 @@ ll - equivalent of `ls -lah`
     -h print human readable values (like 1K 420M 5G etc)
     
 identifyprocess - equivalent of `ps ax | grep <string>`
-    • Usage - identifyprocess python
+
+• Usage - identifyprocess python
