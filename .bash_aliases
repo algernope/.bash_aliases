@@ -24,7 +24,7 @@ smbanonlist() {
 }
 # list smb user
 smbuserlist() {
-	smbclient -L \\\\$1\\ -U "$2"
+	smbclient -L \\\\"$1"\\ -U "$2"
 }
 # access smb anon
 smbanonaccess() {
@@ -41,7 +41,7 @@ pyhttpserver() {
 	python3 -m http.server "$1"
 }
 
-OpenVPN
+#OpenVPN
 # openvpn aliases
 alias ovpnhtb='sudo openvpn ovpn/hackthebox.ovpn'
 alias ovpnthm='sudo openvpn ovpn/tryhackme.ovpn'
