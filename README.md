@@ -104,6 +104,12 @@ addhosts - equivalent of `sudo -- sh -c "echo '<ip>      <hostname>' >> /etc/hos
   
 losehostsbyname - equivalent of `sudo sed -i /<ip or hostname>/d /etc/hosts`
 
+• Usage - losehostsbyname host.name
+
+showhosts - equivalent of `sudo cat /etc/hosts`
+
+• Usage - showhosts
+
 # Misc
 
 ll - equivalent of `ls -lah`
