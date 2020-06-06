@@ -122,3 +122,7 @@ ll - equivalent of `ls -lah`
 identifyprocess - equivalent of `ps ax | grep <string>`
 
 • Usage - identifyprocess python
+
+cpro - uses the `cpro` command to anonymize and/or add timestamps to your shell session.
+
+• Usage - cpro +anon|-anon|+time|-time
