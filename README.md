@@ -6,9 +6,9 @@ Kali is an extremely useful distribution with a lot of powerful tools. But, that
 
 This bash aliases file has helped save me a lot of typing and I would like to make it available for others to use and improve.
 
-Simply clone the repository (git clone https://github.com/algernope/.bash_aliases/)
-Copy or move .bash_aliases to your home directory
-Run source .bash_aliases
+Simply clone the repository (`git clone https://github.com/algernope/.bash_aliases/`)
+Copy or move .bash_aliases to your home directory (`cp .bash_aliases ~/.bash_aliases`)
+Run source .bash_aliases (`source ~/.bash_aliases`)
 
 Now the bash aliases are ready to use!
 
