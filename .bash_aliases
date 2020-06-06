@@ -77,7 +77,7 @@ addhosts() {
 
 # Misc
 # alias for ll
-alias ll='ls -lh'
+alias ll='ls -lah'
 
 # identify running process by name
 identifyprocess() {
